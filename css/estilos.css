@@ -1,0 +1,310 @@
+/* ------- variables --------*/
+:root{
+    /* colores */
+    --yellow-1: #FFCB47;
+    --blue-1: #3A7CA5;
+    --white-1: #F5F6F4;
+    --dark-blue-1: #15425B;
+    --grey-1:#3D3D3D;
+    /* espaciado */
+    --space:10px;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white-1);
+}
+
+/* ------- Nav Bar --------*/
+.menu{
+    background-color: var(--blue-1);
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0,5px solid #fff;
+    box-shadow: 5px 0 10px var(--grey-1);
+}
+nav img{
+    margin-top:30px ;
+    width: 220px;
+    height: 69,5px;
+    padding-left: 30px;
+} 
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu_items li{
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.menu_items li a{
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-transform: uppercase;
+    color: var(--yellow-1);
+}
+.menu_items li.active{
+    background-color: var(--blue-1);
+    color: #fff ;
+    font-weight: bold; 
+}
+.menu_items li a:hover{
+    color: #fff;
+    font-weight: bold;   
+    background-color: #ffda7cc7;
+    transition: .4s;
+    border-radius: 30px;
+}
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: var(--yellow-1);
+    cursor:pointer;
+    display: none;
+}
+ul.show{
+    top:65px;
+}
+@media screen and (max-width: 952px) {
+    .nav img{
+        width: 200px;
+        padding-left: 35px;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px){
+    .menu{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: var(--grey-1);
+        top:-100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_items li:hover{
+        background: none;
+    }
+    .menu_items li a{
+        font-size: 20px;
+        color:#fff;
+        font-weight: bold;
+    }
+    .menu_items li a:hover{
+        color: #fff;
+    }
+    nav img{
+        width: 220px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width: 858px) and (orientation: landscape){
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items {
+        overflow: scroll;
+        height: calc(100%-65px);
+    }
+}
+/* ------- Sesión1 --------*/
+.section-1{
+    display: flex;
+}
+.section-1 .content{
+    max-width: 100%;
+    padding: 10%;
+    text-align: left;
+    margin-bottom: 35px;
+}
+.content ul{
+    margin-top: var(--space);
+    margin-left: -10px;
+}
+.img_content {
+    padding: 10%;
+    text-align: center;
+    margin: auto; 
+}
+.img_content .img{
+    width: 350px;
+    height: 350px;
+    border-radius: 0;
+}
+
+.btn_primary{
+    display: flex;
+    list-style: none;
+
+}
+.btn_primary li{
+    border-radius: 6px;
+    margin: 0 5px;
+}
+.btn_primary li button{
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    color: var(--blue-1);
+    border-style: solid;
+    border-color: var(--dark-blue-1);
+    border-radius: 30px;
+    border-width: 1px;
+}
+.btn_primary li button:hover{
+    color: var(--white-1);
+    font-size: 17px;   
+    background-color:var(--dark-blue-1);
+    transition: .2s;
+    border-radius: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--blue-1);
+    border-width: 1px;
+}
+
+hr{
+height: 2px;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+background-color: var(--dark-blue-1);
+}
+
+/* ------- Sesión2 --------*/
+.section-2 h4,h6{
+    text-align: center;
+    justify-content: center;
+}
+.subtitulo{
+    margin:0;
+    color: var(--white-1);
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.texto_img{
+    color: var(--blue-1);
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px var(--yellow-1);
+    margin-top: 0;
+}
+.line-division{
+    width: 80%;
+    height: 2px;
+    background-color: var(--grey-1);
+}
+
+/* ------- Sesión3 --------*/
+
+.title{
+    text-align: center;
+    margin-top: 40px;
+}
+.menciones{
+    padding-top: 5%;
+    padding-left: 45%;
+    padding-right: 45%;
+    text-align: center;
+    display: flex;
+    }
+.menciones-nombres{
+    padding-top: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: flex;
+    }
+.mencion{
+    padding: var(--space);
+    margin-top: 10px;
+    margin-left: 15px;
+    }
+.mencion:hover{
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.mencion .content{
+    border-radius: 15px;
+    background-color: white;
+    padding: var(--space);
+    box-shadow: 0 0 4px  var(--blue-1);
+    font-weight: bold;
+    justify-content: center;
+    }
+.mencion .content:hover{
+    box-shadow: 0 0 8px  var(--dark-blue-1);
+}
+
+.mencion .content h4{
+    justify-content: center;
+    color: var(--grey-1);
+}
+.img_content img{
+    justify-content: center;
+    border-radius: 100px;
+}
+.mencion .content h6,.mencion .content p{
+    text-align: center;
+}
+.mencion .content h6{
+    color: var(--blue-1);
+    font-weight: bold;
+}
+.mencion .content button{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}    
+.mencion .content button:hover{
+    background: var(--yellow-1) ;
+    font-weight: bold;
+    border-color: var(--yellow-1);
+    cursor: pointer;
+}
+.mencion .content ul{
+justify-content: center;
+}
+
+@media (max-width:750px) {
+    .menciones-nombres{
+    display: inherit;
+    }
+    .content button{
+        margin-bottom: 15px;
+    }   
+ }
