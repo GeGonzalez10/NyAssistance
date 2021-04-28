@@ -105,7 +105,7 @@ ul.show{
         background: var(--grey-1);
         top:-100vh;
         text-align: center;
-        transition: all .4s;
+        transition: all .2s;
         flex-direction: column;
     }
     .menu_items li{
@@ -123,7 +123,7 @@ ul.show{
     .menu_items li a:hover{
         color: #fff;
     }
-    nav img{
+    .nav img{
         width: 220px;
         padding-left: 35px;
     }
@@ -140,6 +140,11 @@ ul.show{
 /* ------- Sesión1 --------*/
 .section-1{
     display: flex;
+    background-image: url("../assets/images/banner.jpg");
+    width: 100%;
+}
+.section-1 h4{
+    color: var(--white-1);
 }
 .section-1 .content{
     max-width: 100%;
@@ -160,8 +165,8 @@ ul.show{
     width: 350px;
     height: 350px;
     border-radius: 0;
+    box-shadow: 10px 10px 10px var(--grey-1);
 }
-
 .btn_primary{
     display: flex;
     list-style: none;
@@ -177,22 +182,21 @@ ul.show{
     font-size: 16px;
     display: block;
     text-transform: uppercase;
-    color: var(--blue-1);
+    color: var(--white-1);
+    background-image: url("../assets/images/banner.jpg");    
     border-style: solid;
-    border-color: var(--dark-blue-1);
-    border-radius: 30px;
+    border-color: none;
+    border-radius: 15px;
     border-width: 1px;
 }
 .btn_primary li button:hover{
     color: var(--white-1);
-    font-size: 17px;   
+    font-size: 18px;   
     background-color:var(--dark-blue-1);
     transition: .2s;
-    border-radius: 30px;
-    border-width: 3px;
+    border-radius: 15px;
+    border-width: 2px;
     border-style: solid;
-    border-color: var(--blue-1);
-    border-width: 1px;
 }
 
 hr{
@@ -202,32 +206,58 @@ margin-left: 10%;
 margin-right: 10%;
 background-color: var(--dark-blue-1);
 }
-
 /* ------- Sesión2 --------*/
 .section-2 h4,h6{
     text-align: center;
     justify-content: center;
 }
-.subtitulo{
+.subtitle{
     margin:0;
-    color: var(--white-1);
+    color: black;
     display: inline;
     font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
 }
-.texto_img{
+.texto-img{
     color: var(--blue-1);
     margin: 7px 0;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 600;
-    text-shadow: 2px 2px 1px var(--yellow-1);
+    text-shadow: 2px 2px 1px var(--grey-1);
     margin-top: 0;
 }
 .line-division{
     width: 80%;
     height: 2px;
-    background-color: var(--grey-1);
+    background-color: var(--yellow-1);
+}
+
+/*estilos de materialize*/
+
+.carousel{
+    min-height: 500px;
+}
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+}
+.carousel .carousel-item img{
+    min-width: 300%;
+    height: 210%;
+    object-fit: cover;
+    position: absolute;
+    top: -80px;
+    z-index: -1;
+    border-radius: 15px;
+}
+.carousel .indicators .indicators-item{
+    margin: 0 15px;
 }
 
 /* ------- Sesión3 --------*/
@@ -281,6 +311,7 @@ background-color: var(--dark-blue-1);
 }
 .mencion .content h6,.mencion .content p{
     text-align: center;
+    user-select: none;
 }
 .mencion .content h6{
     color: var(--blue-1);
@@ -289,6 +320,10 @@ background-color: var(--dark-blue-1);
 .mencion .content button{
     margin-bottom: 15px;
     margin-top: 15px;
+    user-select: none;
+    background: #D6DAD2;
+    border-color: #D6DAD2;
+    color: var(--blue-1);
 }    
 .mencion .content button:hover{
     background: var(--yellow-1) ;
@@ -306,5 +341,30 @@ justify-content: center;
     }
     .content button{
         margin-bottom: 15px;
-    }   
- }
+    } 
+    .section-1{
+        display: inherit;
+    }
+    .section-1 .content{
+        text-align: center;
+        align-items: center;
+    }
+    .img_content{
+        justify-content: center;
+    }
+    .img_content .img{
+        width: 250px;
+        height: 250px;
+    }
+    .section-1 .content ul{
+        margin-left: 30%;
+    }  
+}
+
+.img_isotipo{
+    border-radius:100% ;
+    width: 80px;
+    height: 80px;
+    margin-bottom: -50px;
+    margin-left: 50%;
+}
