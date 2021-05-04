@@ -1,11 +1,16 @@
 /* ------- variables --------*/
 :root{
     /* colores */
-    --yellow-1: #FFCB47;
+    --yellow-1: #F9AB10;
     --blue-1: #3A7CA5;
-    --white-1: #F5F6F4;
+    --white-1: #F5F5F5;
     --dark-blue-1: #15425B;
     --grey-1:#3D3D3D;
+    --grey-2:#ADADAD;
+    --red: #F24211;
+    --pink:#FF9966;
+    --green-1:#66CC66;
+    --green-2:#90CC69;
     /* espaciado */
     --space:10px;
 }
@@ -26,7 +31,7 @@ body{
 .menu{
     background-color: var(--blue-1);
     height: 75px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -210,6 +215,7 @@ background-color: var(--dark-blue-1);
 .section-2 h4,h6{
     text-align: center;
     justify-content: center;
+    margin: var(--space);
 }
 .subtitle{
     margin:0;
@@ -275,7 +281,7 @@ background-color: var(--dark-blue-1);
     }
 .menciones-nombres{
     padding-top: 5%;
-    padding-right: 5%;
+    padding-right: 3%;
     text-align: center;
     display: flex;
     }
@@ -361,10 +367,35 @@ justify-content: center;
     }  
 }
 
+/* ------- Footer --------*/
 .img_isotipo{
     border-radius:100% ;
     width: 80px;
     height: 80px;
     margin-bottom: -50px;
-    margin-left: 50%;
+    margin-left: 48%;
+}
+.foot{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin-left: 50% ;
+}
+
+.links{
+    margin-left: 100px;
+}
+
+.container.foot ul{
+    margin-left: 37.5%;
+}
+
+a.RRSS{
+    font-size: 3rem;
+    margin: 15px;
+    color: var(--white-1);
+}
+
+.icon.brands{
+    font-family: 'Font Awesome 5 Brands';
 }
