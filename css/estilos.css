@@ -35,24 +35,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0,5px solid #fff;
+    border-bottom: 1px solid #fff;
     box-shadow: 5px 0 10px var(--grey-1);
 }
-nav img{
-    margin-top:30px ;
-    width: 220px;
+a .img_navbar{
+    margin-top: 8px;
+    width: 320px;
     height: 69,5px;
     padding-left: 30px;
 } 
-.menu_items{
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
-}
-.menu_items li{
-    border-radius: 5px;
-    margin: 0 5px;
-}
+
 .menu_items li a{
     padding-left:15px;
     padding-right: 15px;
@@ -145,7 +137,7 @@ ul.show{
 /* ------- Sesión1 --------*/
 .section-1{
     display: flex;
-    background-image: url("../assets/images/banner.jpg");
+    background-image: url("../assets/images/prueba.jpeg");
     width: 100%;
 }
 .section-1 h4{
@@ -153,7 +145,9 @@ ul.show{
 }
 .section-1 .content{
     max-width: 100%;
-    padding: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
     text-align: left;
     margin-bottom: 35px;
 }
@@ -175,7 +169,6 @@ ul.show{
 .btn_primary{
     display: flex;
     list-style: none;
-
 }
 .btn_primary li{
     border-radius: 6px;
@@ -194,7 +187,7 @@ ul.show{
     border-radius: 15px;
     border-width: 1px;
 }
-.btn_primary li button:hover{
+.btn_primary button:hover{
     color: var(--white-1);
     font-size: 18px;   
     background-color:var(--dark-blue-1);
@@ -202,6 +195,7 @@ ul.show{
     border-radius: 15px;
     border-width: 2px;
     border-style: solid;
+    cursor: pointer;
 }
 
 hr{
@@ -254,8 +248,8 @@ background-color: var(--dark-blue-1);
     height: 500px;
 }
 .carousel .carousel-item img{
-    min-width: 300%;
-    height: 210%;
+    min-width: 215%;
+    height: 215%;
     object-fit: cover;
     position: absolute;
     top: -80px;
@@ -313,7 +307,6 @@ background-color: var(--dark-blue-1);
 }
 .img_content img{
     justify-content: center;
-    border-radius: 100px;
 }
 .mencion .content h6,.mencion .content p{
     text-align: center;
@@ -349,6 +342,8 @@ justify-content: center;
         margin-bottom: 15px;
     } 
     .section-1{
+        background-image: none;
+        background:linear-gradient(0deg, var(--grey-2) , var(--grey-1));
         display: inherit;
     }
     .section-1 .content{
@@ -367,8 +362,15 @@ justify-content: center;
     }  
 }
 
+/* ------- Seccion 4 --------*/
+.form{
+    background: linear-gradient(0deg, #1f7c1fb4, var(--green-2));
+}
+
 /* ------- Footer --------*/
 .img_isotipo{
+    border-color: black;
+    border-width:1rem;
     border-radius:100% ;
     width: 80px;
     height: 80px;

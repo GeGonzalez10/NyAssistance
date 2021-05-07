@@ -20,3 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
         indicators: true
     });
 });
+
+//animations
+window.addEventListener('scroll', function(){ 
+    let animacion = document.getElementById('animado');
+    let posicionObj1 = animacion.getBoundingClientRect().top;
+    console.log(posicionObj1);
+    let tamañoDePantalla = window.innerHeight/4;
+
+    if(posicionObj1 < tamañoDePantalla1){
+
+        animacion.style.animation = "fade.In 1s";
+    }
+})
+    
